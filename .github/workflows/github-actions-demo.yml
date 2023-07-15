@@ -15,4 +15,4 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: test the project
-        run: npm run test-ci
+        run: npm test -- --no-watch --no-progress --browsers=ChromeHeadless
